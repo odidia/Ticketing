@@ -6,4 +6,5 @@ This is a text gitfile for cohort 8. The espectation is that at the end of this 
 we are adding new lines to this file
 Git is an interesting course to learn 
 Showing the head change
-Adding a new line of text from bugfix branch. 
+Adding a new line of text from bugfix branch.
+It is a bright and sunny day  
