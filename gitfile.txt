@@ -1,0 +1,6 @@
+This is a text gitfile for cohort 8. The espectation is that at the end of this lecture we would have: 
+1. Refreshed our memory on the last class
+2. Learnt about get branches
+3. Opened up a git respository 
+4. Push our code from the local repository to the remote repository
+
