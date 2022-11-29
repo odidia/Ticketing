@@ -3,4 +3,4 @@ This is a text gitfile for cohort 8. The espectation is that at the end of this 
 2. Learnt about get branches
 3. Opened up a git respository 
 4. Push our code from the local repository to the remote repository
-
+we are adding new lines to this file 
