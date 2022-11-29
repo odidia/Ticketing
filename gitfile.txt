@@ -8,3 +8,4 @@ Git is an interesting course to learn
 Showing the head change
 Adding a new line of text from bugfix branch.
 It is a bright and sunny day  
+We are adding this new line for the GUI
