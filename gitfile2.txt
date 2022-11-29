@@ -1,1 +1,2 @@
 We are adding new line to this file from the CLI and we will push/pull"
+We are going to pull from the remote repo 
