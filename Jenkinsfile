@@ -8,8 +8,19 @@ pipeline {
     }
 
     stage('Log') {
-      steps {
-        sh 'mkdir ticket-frontend ticketbackend && ls -la '
+      parallel {
+        stage('Log') {
+          steps {
+            sh 'mkdir ticket-frontend ticketbackend && ls -la '
+          }
+        }
+
+        stage('Front-End Unit Tests') {
+          steps {
+            sh 'cd ticket-frontend && npm i &&  npm run test:unit '
+          }
+        }
+
       }
     }
 
