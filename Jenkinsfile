@@ -8,19 +8,14 @@ pipeline {
     }
 
     stage('Log') {
-      parallel {
-        stage('Log') {
-          steps {
-            sh 'mkdir ticket-frontend ticketbackend && ls -la '
-          }
-        }
+      steps {
+        sh 'mkdir ticket-frontend ticketbackend && ls -la '
+      }
+    }
 
-        stage('Front End Unit Tests') {
-          steps {
-            sh 'cd ticket-frontend && npm i && npm run test:unit '
-          }
-        }
-
+    stage(' Deploy ') {
+      steps {
+        sh 'docker build -f ticking-frontend/Dockerfile . '
       }
     }
 
