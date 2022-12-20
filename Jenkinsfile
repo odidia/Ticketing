@@ -17,7 +17,7 @@ pipeline {
 
         stage('Front-End Unit Tests') {
           steps {
-            sh 'mkdir ticketing-frontend ticketing-backend && cd ticketing-frontend  && yum install && yum run test:unit '
+            sh 'mkdir ticketing-frontend ticketing-backend && cd ticketing-frontend  && sudo yum update && sudo yum run test:unit '
           }
         }
 
