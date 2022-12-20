@@ -15,7 +15,7 @@ pipeline {
 
     stage(' build container ') {
       steps {
-        sh 'docker build -t ticket-frontend/dockerfile . '
+        sh 'docker build -t ticket-frontend/Dockerfile . '
       }
     }
 
