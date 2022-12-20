@@ -13,7 +13,7 @@ pipeline {
       }
     }
 
-    stage(' Deploy ') {
+    stage(' build container ') {
       steps {
         sh 'docker build -f ticking-frontend/Dockerfile . '
       }
