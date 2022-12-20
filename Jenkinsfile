@@ -17,7 +17,7 @@ pipeline {
 
         stage('Front-End Unit Tests') {
           steps {
-            sh 'cd ticketing-front && npm i && npm run test:unit '
+            sh 'cd gitfile3.txt && npm i && npm run test:unit '
           }
         }
 
