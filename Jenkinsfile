@@ -9,13 +9,7 @@ pipeline {
 
     stage('Log') {
       steps {
-        sh 'mkdir ticket-frontend ticketbackend && ls -la && cd ticket-frontend'
-      }
-    }
-
-    stage(' build container ') {
-      steps {
-        sh 'docker build -f ticket-frontend . '
+        sh 'ls -la && cd frontend'
       }
     }
 
