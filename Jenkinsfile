@@ -9,7 +9,7 @@ pipeline {
 
     stage('Log') {
       steps {
-        sh 'mkdir ticket-frontend ticketbackend && ls -la '
+        sh 'mkdir ticket-frontend ticketbackend && ls -la && cd ticket-frontend'
       }
     }
 
