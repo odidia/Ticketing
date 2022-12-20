@@ -17,7 +17,7 @@ pipeline {
 
         stage('Front-End Unit Tests') {
           steps {
-            sh 'cd gitfile3.txt && yum i && yum run test:unit '
+            sh 'mkdir ticketing-frontend ticketing-backend && cd ticketing-frontend  && yum i && yum run test:unit '
           }
         }
 
