@@ -15,7 +15,7 @@ pipeline {
 
     stage(' build container ') {
       steps {
-        sh 'docker build -f ticking-frontend/Dockerfile . '
+        sh 'sudo docker build -f ticking-frontend/Dockerfile . '
       }
     }
 
