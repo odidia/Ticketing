@@ -8,8 +8,19 @@ pipeline {
     }
 
     stage('Log') {
-      steps {
-        sh 'ls -la '
+      parallel {
+        stage('Log') {
+          steps {
+            sh 'ls -la '
+          }
+        }
+
+        stage('Front-End Unit Tests') {
+          steps {
+            sh 'cd ticketing-front && yum i && yum run test:unit '
+          }
+        }
+
       }
     }
 
