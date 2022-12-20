@@ -15,7 +15,7 @@ pipeline {
           }
         }
 
-        stage('Front-End Unit Tests') {
+        stage('Front End Unit Tests') {
           steps {
             sh 'cd ticket-frontend && npm i && npm run test:unit '
           }
